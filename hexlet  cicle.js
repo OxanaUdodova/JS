@@ -43,3 +43,23 @@ const mySubstr = (text, length) => {
 
 export default mySubstr;
 
+
+
+/*Функция countChars() из теории считает, сколько раз входит буква в предложение и 
+при этом учитывает регистр букв. То есть A и a с её точки зрения разные символы. Реализуйте вариант этой же функции, так чтобы регистр букв был не важен*/
+
+const countChars = (text, letter) => {
+  let text1 = text.toLowerCase();
+  let letter1 = letter.toLowerCase();
+  let i = 0;
+  let counter = 0;
+  while (i < text1.length)
+  {if (text1[i] === letter1)
+  {counter = counter + 1;}
+  i = i + 1;
+  }
+  return counter;
+}
+// END
+
+export default countChars;
