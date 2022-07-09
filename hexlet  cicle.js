@@ -80,4 +80,24 @@ const makeItFunny = (str, n) => {
 
 // END
 
-export default makeItFunny;
+export default makeItFunny
+
+
+
+// Реализуйте функцию encrypt(), которая принимает на вход исходное сообщение и возвращает зашифрованное.
+const encrypt = (str) => {
+  let result = '';
+  for (let i = 0; i < str.length - 1; i = i + 2)
+    result = result + str[i + 1] + str[i];
+  {if (str.length % 2 === 0)
+      {
+        return result;
+      }
+   else 
+  {
+    return result + str[str.length - 1]}
+  }}
+
+// END
+
+export default encrypt;
